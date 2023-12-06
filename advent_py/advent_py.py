@@ -1,7 +1,7 @@
 import reflex as rx
 import advent_py.styles.styles as styles
 from advent_py.styles.styles import Size
-from advent_py.views import navbar, header
+from advent_py.views import navbar, header, footer
 
 
 
@@ -16,10 +16,11 @@ def index() -> rx.Component:
         rx.center(
             rx.vstack(
                 header.header(),
+                footer.footer(),
                 width="100%",
                 spacing=Size.BIG.value
             )
-        )
+        ),
     )
 
 
