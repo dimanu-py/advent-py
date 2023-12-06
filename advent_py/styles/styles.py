@@ -1,3 +1,5 @@
+from enum import Enum
+
 import reflex as rx
 from .fonts import Font
 from .colors import TextColor, Color
@@ -12,3 +14,9 @@ BASE_STYLE = {
     "color": TextColor.PRIMARY.value,
     "background": Color.PRIMARY.value,
 }
+
+
+class Size(Enum):
+    STANDARD = "1em"
+    SMALL = "0.5em"
+    BIG = "2em"
