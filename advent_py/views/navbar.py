@@ -1,5 +1,7 @@
 import reflex as rx
 from advent_py.styles.styles import Size, Color
+from advent_py.components.link_icon import link_icon
+import advent_py.constants as constants
 
 
 def navbar() -> rx.Component:
@@ -13,6 +15,14 @@ def navbar() -> rx.Component:
             ),
             rx.text("aDEViento", size=2),
             rx.spacer(),
+            link_icon(
+                "github",
+                constants.GITHUB_URL
+            ),
+            link_icon(
+                "linkedin",
+                constants.LINKEDIN_URL
+            ),
             width="100%"
         ),
         position="sticky",
