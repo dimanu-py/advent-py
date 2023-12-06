@@ -37,6 +37,13 @@ BASE_STYLE = {
     rx.Span: {
         "font_size": Size.MEDIUM.value,
     },
+    rx.Button: {
+        "margin_top": Size.STANDARD.value,
+        "color": f"{TextColor.SECONDARY.value} !important",
+        "_hover": {
+            "color": f"{TextColor.PRIMARY.value} !important",
+        }
+    }
 }
 
 max_width_style = dict(
