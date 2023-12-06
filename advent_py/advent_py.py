@@ -1,6 +1,8 @@
 import reflex as rx
 import advent_py.styles.styles as styles
-from advent_py.views.navbar import navbar
+from advent_py.styles.styles import Size
+from advent_py.views import navbar, header
+
 
 
 """
@@ -10,7 +12,14 @@ No vamos a crear backend, no hay estado, por lo que tendremos una página estát
 """
 def index() -> rx.Component:
     return rx.box(
-        navbar(),
+        navbar.navbar(),
+        rx.center(
+            rx.vstack(
+                header.header(),
+                width="100%",
+                spacing=Size.BIG.value
+            )
+        )
     )
 
 
