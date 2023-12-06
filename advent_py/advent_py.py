@@ -1,5 +1,6 @@
 import reflex as rx
 import advent_py.styles.styles as styles
+from advent_py.views.navbar import navbar
 
 
 """
@@ -9,7 +10,7 @@ No vamos a crear backend, no hay estado, por lo que tendremos una página estát
 """
 def index() -> rx.Component:
     return rx.box(
-
+        navbar(),
     )
 
 
