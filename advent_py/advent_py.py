@@ -2,6 +2,7 @@ import reflex as rx
 import advent_py.styles.styles as styles
 from advent_py.styles.styles import Size
 from advent_py.views import navbar, header, footer, instructions, calendar
+from advent_py.components import github
 
 
 
@@ -19,6 +20,7 @@ def index() -> rx.Component:
                 instructions.instructions(),
                 calendar.calendar(),
                 footer.footer(),
+                github.github(),
                 width="100%",
                 spacing=Size.BIG.value
             )
