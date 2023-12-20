@@ -8,7 +8,7 @@ def navbar() -> rx.Component:
     return rx.vstack(
         rx.hstack(
             rx.image(
-                src="mouredev.png",
+                src="dimanu-py.png",
                 alt="Imagen pixel art de MoureDev con estilo navideño",
                 width=Size.STANDARD.value,
                 height=Size.STANDARD.value

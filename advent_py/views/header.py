@@ -13,8 +13,8 @@ def header() -> rx.Component:
         ),
         rx.flex(
             rx.image(
-                src="mouredev.png",
-                alt="Imagen pixel art de MoureDev con estilo navideño",
+                src="dimanu-py.png",
+                alt="Imagen pixel art de dimanu-py con estilo navideño",
                 width="16em",
                 height="16em",
                 margin_right=Size.BIG.value
