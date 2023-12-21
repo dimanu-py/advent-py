@@ -90,6 +90,7 @@
 .spyproject
 .tox/
 .venv
+.venv/
 .web
 .webassets-cache
 /site
@@ -129,5 +130,4 @@ share/python-wheels/
 target/
 var/
 venv.bak/
-venv/
 wheels/

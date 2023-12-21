@@ -14,6 +14,9 @@ No vamos a crear backend, no hay estado, por lo que tendremos una página estát
 def index() -> rx.Component:
     return rx.box(
         rx.script(
+            src="document.documentElement.lang = 'en'"
+        ),
+        rx.script(
             src="/js/snow.js"
         ),
         navbar.navbar(),
